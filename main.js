@@ -1,45 +1,47 @@
 $(document).ready(function()
 {
-  switchPage(0);
+  switchPage("home-page");
   //bind - automatically calls the function (event)
 
 });
 
-function switchPage(index) {
+// function switchPage(index) {
+//   var pages = $(".page").toArray();
+//   for(var i = 0; i < pages.length; i++) {
+//     if(index == i) {
+//       $(pages[i]).show(150);
+//     }
+//     else {
+//       $(pages[i]).hide(250);
+//     }
+//   }
+// }
+
+
+function switchPage(id) {
   var pages = $(".page").toArray();
-  for(var i = 0; i < pages.length; i++) {
-    if(index == i) {
-      $(pages[i]).show(150);
-    }
-    else {
-      $(pages[i]).hide(250);
+  for (p of pages) {
+    console.log(p.id);
+    if (p.id == id) {
+      $("#" + p.id).show(150);
+    } else {
+      $("#" + p.id).hide(250);
     }
   }
 }
-function sendInfo() {
 
-		var url = "NewFile1.html";
+// Function 1: will be used to retrieve data from document
+  function getData(link) {
+    $.get(link, function(responseText) {
+    displayData(responseText);
+});
 
-		if (window.XMLHttpRequest) {
-			request = new XMLHttpRequest();
-		}
-		else if (window.ActiveXObject) {
-			request = new ActiveXObject("Microsoft.XMLHTTP");
-		}
 
-		try {
-			request.onreadystatechange = getInfo;
-			request.open("GET", url, true);
-			request.send();
-		}
-		catch (e) {
-			alert("Unable to connect to server");
-		}
-	}
+  }
 
-	function getInfo() {
-		if (request.readyState == 4) {
-			var val = request.responseText;
-			document.getElementById('chiru').innerHTML = val;
-		}
-	}
+
+
+// Function 2: will be used to load data that was retrieved onto Website
+function displayData(text) {
+  $(".text-section").html(text);
+}
