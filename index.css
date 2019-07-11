@@ -1,39 +1,48 @@
 body {
-   background-color: white;
-   color: green;
+  background: rgb(198,255,165);
+  background: linear-gradient(196deg, rgba(198,255,165,1) 0%, rgba(253,255,202,1) 100%, rgba(253,255,161,1) 100%); 
+  color: rgb(82, 133, 35);
   font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin: 5%;
+  margin-top: 5em;
 }
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
-  background-color: #2196F3;
-  display;flex;
-  justify-content: center;
-  align-items: center;
-  align-items: center;
-
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  grid-gap: 2%;
+  grid-area: auto;
 }
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 0.1em solid rgba(0, 0, 0, 0.8);
-  padding: 2.7em;
-  font-size: 2em;
+  min-width: 6em;
+  min-height: 3em;
+  border-radius: 0.9em;
+  transition: background-color 0.2s ease-in, box-shadow 0.2s ease-in;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.46);
 }
 
 .grid-item:hover {
-  background-color:yellow;
+  background-color:rgb(255, 255, 255);
+  box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.32);
 }
+
 .dropdown-menu {
+  transition: color 0.2s ease-in 0.1s;
   position: relative;
-  font-size: 0.7em;
-  text-align: center;
+  font-size: 1rem;
   visibility: hidden;
+  padding: 2.5em;
+  top: -1em;
+  margin: 0;
 
 }
 .main-text {
+  transition: color 0.2s ease-in 0.15s;
   position: absolute;
-  text-align: center;
+  font-size: 0.5cm;
+  font-weight: 300;
 }
 
 /* Stuff for Outcome Page */
@@ -110,21 +119,60 @@ table {
   padding: 1em 2.5em;
 }
 
+.sub-link {
+  transition: background-color 0.2s ease-in, box-shadow 0.2s ease-in;
+  background-color: transparent;
+  border-radius: 0.5em;
+  border: 1px;
+  padding: 0.5em;
+  font-size: 1em;
+  margin-left: 1em;
+}
+
 .sub-link:hover {
-  background-color:blue;
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.32) inset;
+  background-color: white;
+
 }
 
 nav {
-  display: flex;
-  top: 2em;
-  left: 10em;
-  font-size: 0.5em;
+  background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
-  width: 5em;
-  height: 1em;
-  border: 0.2em solid coral;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  min-width: 2em;
+  padding: 1em;
+  box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.32);
+  z-index: 1;
+  font-weight: 300;
+  font-size: 1em;
+}
 
+#nav-buttons {
+  display: inline;
+  position: absolute;
+  float: right;
+}
+
+nav h1 {
+  display: inline;
+  padding: 3vw;
+}
+
+#nav-buttons button {
+  transition: background-color 0.2s ease-in, box-shadow 0.2s ease-in;
+  display: inline;
+  background-color: transparent;
+  border-radius: 0.5em;
+  border: 1px;
+  padding: 0.5em;
+  font-size: 1em;
+  margin-left: 1em;
+}
+
+#nav-buttons button:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.32);
+  background-color: white;
 }
