@@ -1,229 +1,235 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
-  <head>
-    <title>Exploring Physical Science</title>
-    <meta charset = "UTF-8" />
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <meta name="theme-color" content="#c6ffa5" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Exploring Physical Science</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <meta name="theme-color" content="#c6ffa5" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- This is JS section -->
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  <script src= "main.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600&display=swap" rel="stylesheet"> 
-  <link href="fontello/css/icons.css" rel="stylesheet"> 
-  </head>
+  <!-- This is JS section -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600&display=swap" rel="stylesheet">
+  <link href="fontello/css/icons.css" rel="stylesheet">
+</head>
 
 <body>
   <nav>
-    <h1>Exploring Physical Science</h1>
+    <h1 onclick="switchPage('home-page')">Exploring Physical Science</h1>
     <div id="nav-buttons">
-      <button onclick="switchPage('home-page')"">
+      <button onclick="switchPage('home-page')">
         <span class="icon-home"></span>
         Home
       </button>
-      <button onclick="switchPage('home-page')"">
+      <button onclick="switchPage('home-page')">
         <span class="icon-mail-alt"></span>
         Contact
       </button>
     </div>
   </nav>
-<!-- Main Page -->
-<div class="grid-container page" id = "home-page">
-  <div class="grid-item">
-    <div class = "main-text" id = "scientific-methods">Scientific Methods</div>
-    <div class = "dropdown-menu">
-      <div class = "sub-link" onclick = "switchPage('text-template-page'); getData('content/Scientific Methods.html')">Text</div>
-      <div class = "sub-link" >Outcomes</div>
-      <div class = "sub-link">Video</div>
-      <div class = "sub-link">Activities</div>
+  <!-- Main Page -->
+  <div class="grid-container page" id="home-page">
+    <div class="grid-item">
+      <div class="main-text" id="scientific-methods">Scientific Methods</div>
+      <div class="dropdown-menu">
+        <div class="sub-link" onclick="switchPage('text-template-page'); getData('content/Scientific Methods.html')">
+          <span class="icon-doc-text-inv"></span> Text</div>
+        <div class="sub-link"><span class="icon-eq"></span> Outcomes</div>
+        <div class="sub-link"><span class="icon-video"></span> Video</div>
+        <div class="sub-link"><span class="icon-star"></span> Activities</div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="main-text" id="Motion">Motion</div>
+      <div class="dropdown-menu">
+        <div class="sub-link" onclick="switchPage('text-template-page'); getData('content/Motion.html')"><span
+            class="icon-doc-text-inv"></span> Text</div>
+        <div class="sub-link"><span class="icon-eq"></span> Outcomes</div>
+        <div class="sub-link"><span class="icon-video"></span> Video</div>
+        <div class="sub-link"><span class="icon-star"></span> Activities</div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="main-text" id="Forces">Forces</div>
+      <div class="dropdown-menu">
+        <div class="sub-link" onclick="switchPage('text-template-page'); getData('content/Forces.html')"><span
+            class="icon-doc-text-inv"></span> Text</div>
+        <div class="sub-link"><span class="icon-eq"></span> Outcomes</div>
+        <div class="sub-link"><span class="icon-video"></span> Video</div>
+        <div class="sub-link"><span class="icon-star"></span> Activities</div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="main-text" id="Waves">Waves</div>
+      <div class="dropdown-menu">
+        <div class="sub-link"><span class="icon-doc-text-inv"></span> Text</div>
+        <div class="sub-link"><span class="icon-eq"></span> Outcomes</div>
+        <div class="sub-link"><span class="icon-video"></span> Video</div>
+        <div class="sub-link"><span class="icon-star"></span> Activities</div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="main-text" id="Thermal-Energy"> Thermal Energy</div>
+      <div class="dropdown-menu">
+        <div class="sub-link"><span class="icon-doc-text-inv"></span> Text</div>
+        <div class="sub-link"><span class="icon-eq"></span> Outcomes</div>
+        <div class="sub-link"><span class="icon-video"></span> Video</div>
+        <div class="sub-link"><span class="icon-star"></span> Activities</div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="main-text" id="Mechanical-Energy">Mechanical Energy</div>
+      <div class="dropdown-menu">
+        <div class="sub-link"><span class="icon-doc-text-inv"></span> Text</div>
+        <div class="sub-link"><span class="icon-eq"></span> Outcomes</div>
+        <div class="sub-link"><span class="icon-video"></span> Video</div>
+        <div class="sub-link"><span class="icon-star"></span> Activities</div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="main-text" id="Charge">Charge</div>
+      <div class="dropdown-menu">
+        <div class="sub-link"><span class="icon-doc-text-inv"></span> Text</div>
+        <div class="sub-link"><span class="icon-eq"></span> Outcomes</div>
+        <div class="sub-link"><span class="icon-video"></span> Video</div>
+        <div class="sub-link"><span class="icon-star"></span> Activities</div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="main-text" id="Properties">Properties</div>
+      <div class="dropdown-menu">
+        <div class="sub-link"><span class="icon-doc-text-inv"></span> Text</div>
+        <div class="sub-link"><span class="icon-eq"></span> Outcomes</div>
+        <div class="sub-link"><span class="icon-video"></span> Video</div>
+        <div class="sub-link"><span class="icon-star"></span> Activities</div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="main-text" id="Elements">Elements</div>
+      <div class="dropdown-menu">
+        <div class="sub-link" onclick="switchPage('text-template-page'); getData('content/Elements.html')"><span
+            class="icon-doc-text-inv"></span> Text</div>
+        <div class="sub-link"><span class="icon-eq"></span> Outcomes</div>
+        <div class="sub-link"><span class="icon-video"></span> Video</div>
+        <div class="sub-link"><span class="icon-star"></span> Activities</div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="main-text" id="Composition">Composition</div>
+      <div class="dropdown-menu">
+        <div class="sub-link" onclick="switchPage('text-template-page'); getData('content/Composition.html')"><span
+            class="icon-doc-text-inv"></span> Text</div>
+        <div class="sub-link"><span class="icon-eq"></span> Outcomes</div>
+        <div class="sub-link"><span class="icon-video"></span> Video</div>
+        <div class="sub-link"><span class="icon-star"></span> Activities</div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="main-text" id="Bonding">Bonding</div>
+      <div class="dropdown-menu">
+        <div class="sub-link" onclick="switchPage('text-template-page'); getData('content/Bonding.html')"><span
+            class="icon-doc-text-inv"></span> Text</div>
+        <div class="sub-link"><span class="icon-eq"></span> Outcomes</div>
+        <div class="sub-link"><span class="icon-video"></span> Video</div>
+        <div class="sub-link"><span class="icon-star"></span> Activities</div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="main-text" id="Reactions">Reactions</div>
+      <div class="dropdown-menu">
+        <div class="sub-link" onclick="switchPage('text-template-page'); getData('content/Reactions.html')"><span
+            class="icon-doc-text-inv"></span> Text</div>
+        <div class="sub-link"><span class="icon-eq"></span> Outcomes</div>
+        <div class="sub-link"><span class="icon-video"></span> Video</div>
+        <div class="sub-link"><span class="icon-star"></span> Activities</div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="main-text" id="Water">Water</div>
+      <div class="dropdown-menu">
+        <div class="sub-link" onclick="switchPage('text-template-page'); getData('content/Water.html')"><span
+            class="icon-doc-text-inv"></span> Text</div>
+        <div class="sub-link"><span class="icon-eq"></span> Outcomes</div>
+        <div class="sub-link"><span class="icon-video"></span> Video</div>
+        <div class="sub-link"><span class="icon-star"></span> Activities</div>
+      </div>
     </div>
   </div>
-  <div class="grid-item">
-    <div class = "main-text" id= "Motion">Motion</div>
-    <div class = "dropdown-menu">
-      <div class = "sub-link" onclick = "switchPage('text-template-page'); getData('content/Motion.html')">Text</div>
-      <div class = "sub-link">Outcomes</div>
-      <div class = "sub-link">Video</div>
-      <div class = "sub-link">Activities</div>
-    </div>
-  </div>
-  <div class="grid-item">
-    <div class = "main-text" id= "Forces">Forces</div>
-    <div class = "dropdown-menu">
-      <div class = "sub-link" onclick = "switchPage('text-template-page'); getData('content/Forces.html')">Text</div>
-      <div class = "sub-link">Outcomes</div>
-      <div class = "sub-link">Video</div>
-      <div class = "sub-link">Activities</div>
-    </div>
-  </div>
-  <div class="grid-item">
-    <div class = "main-text" id= "Waves">Waves</div>
-    <div class = "dropdown-menu">
-      <div class = "sub-link">Text</div>
-      <div class = "sub-link">Outcomes</div>
-      <div class = "sub-link">Video</div>
-      <div class = "sub-link">Activities</div>
-    </div>
-  </div>
-  <div class="grid-item">
-    <div class = "main-text" id= "Thermal-Energy">Thermal Energy</div>
-    <div class = "dropdown-menu">
-      <div class = "sub-link">Text</div>
-      <div class = "sub-link">Outcomes</div>
-      <div class = "sub-link">Video</div>
-      <div class = "sub-link">Activities</div>
-    </div>
-  </div>
-  <div class="grid-item">
-    <div class = "main-text" id= "Mechanical-Energy">Mechanical Energy</div>
-    <div class = "dropdown-menu">
-      <div class = "sub-link">Text</div>
-      <div class = "sub-link">Outcomes</div>
-      <div class = "sub-link">Video</div>
-      <div class = "sub-link">Activities</div>
-    </div>
-  </div>
-  <div class="grid-item">
-    <div class = "main-text" id= "Charge">Charge</div>
-    <div class = "dropdown-menu">
-      <div class = "sub-link">Text</div>
-      <div class = "sub-link">Outcomes</div>
-      <div class = "sub-link">Video</div>
-      <div class = "sub-link">Activities</div>
-    </div>
-  </div>
-  <div class="grid-item">
-    <div class = "main-text" id= "Properties">Properties</div>
-    <div class = "dropdown-menu">
-      <div class = "sub-link" >Text</div>
-      <div class = "sub-link">Outcomes</div>
-      <div class = "sub-link">Video</div>
-      <div class = "sub-link">Activities</div>
-    </div>
-  </div>
-  <div class="grid-item">
-    <div class = "main-text" id= "Elements">Elements</div>
-    <div class = "dropdown-menu">
-      <div class = "sub-link" onclick = "switchPage('text-template-page'); getData('content/Elements.html')">Text</div>
-      <div class = "sub-link">Outcomes</div>
-      <div class = "sub-link">Video</div>
-      <div class = "sub-link">Activities</div>
-    </div>
-  </div>
-  <div class="grid-item">
-    <div class = "main-text" id= "Composition">Composition</div>
-    <div class = "dropdown-menu">
-      <div class = "sub-link" onclick = "switchPage('text-template-page'); getData('content/Composition.html')">Text</div>
-      <div class = "sub-link">Outcomes</div>
-      <div class = "sub-link">Video</div>
-      <div class = "sub-link">Activities</div>
-    </div>
-  </div>
-  <div class="grid-item">
-    <div class = "main-text" id= "Bonding">Bonding</div>
-    <div class = "dropdown-menu">
-      <div class = "sub-link" onclick = "switchPage('text-template-page'); getData('content/Bonding.html')">Text</div>
-      <div class = "sub-link">Outcomes</div>
-      <div class = "sub-link">Video</div>
-      <div class = "sub-link">Activities</div>
-    </div>
-  </div>
-  <div class="grid-item">
-    <div class = "main-text" id= "Reactions">Reactions</div>
-    <div class = "dropdown-menu">
-      <div class = "sub-link" onclick = "switchPage('text-template-page'); getData('content/Reactions.html')">Text</div>
-      <div class = "sub-link">Outcomes</div>
-      <div class = "sub-link">Video</div>
-      <div class = "sub-link">Activities</div>
-    </div>
-  </div>
-  <div class="grid-item">
-    <div class = "main-text" id= "Water">Water</div>
-    <div class = "dropdown-menu">
-      <div class = "sub-link" onclick = "switchPage('text-template-page'); getData('content/Water.html')">Text</div>
-      <div class = "sub-link">Outcomes</div>
-      <div class = "sub-link">Video</div>
-      <div class = "sub-link">Activities</div>
-    </div>
-  </div>
-</div>
 
 
-<!-- TEMPLATE PAGES -->
+  <!-- TEMPLATE PAGES -->
 
 
-<!-- Video Template Page -->
-<div class = "page" id = "video-template-page">
-  <h1>lorem ipsum dolor</h1>
+  <!-- Video Template Page -->
+  <div class="page" id="video-template-page">
+    <h1>lorem ipsum dolor</h1>
 
-  <table>
-    <tr>
-      <th>Title</th>
-      <th>Time</th>
-      <th>Link</th>
-    </tr>
-    <div class = "table-row">
+    <table>
       <tr>
-        <td>Lorem</td>
-        <td>Ipsum</td>
-        <td>Dolor</td>
+        <th> Title</th>
+        <th> Time</th>
+        <th>Link</th>
       </tr>
-    </div>
-</table>
+      <div class="table-row">
+        <tr>
+          <td>Lorem</td>
+          <td>Ipsum</td>
+          <td>Dolor</td>
+        </tr>
+      </div>
+    </table>
 
-</div>
+  </div>
 
-<!-- Outcomes Template Page -->
-<div class = "page" id = "outcomes-template-page">
+  <!-- Outcomes Template Page -->
+  <div class="page" id="outcomes-template-page">
 
     <h1>lorem ipsum dolor</h1>
-    <div class = "content">
-    <div class = "example-section">
-      <div style="display: inline-block;">Example</div>
-      <div style="display: inline-block;">Content</div>
+    <div class="content">
+      <div class="example-section">
+        <div style="display: inline-block;">Example</div>
+        <div style="display: inline-block;">Content</div>
+      </div>
     </div>
   </div>
-</div>
 
 
-<!-- Text Template Page -->
-<div class = "page" id = "text-template-page">
-  <div class = "text-section">
+  <!-- Text Template Page -->
+  <div class="page" id="text-template-page">
+    <div class="text-section">
 
+    </div>
   </div>
-</div>
 
-<!-- Activities Template Page -->
-<div class = "page" id = "activites-template-page">
-  <h1>lorem ipsum dolor</h1>
-  <table>
-    <tr>
-      <th>Activity</th>
-      <th>Description</th>
-      <th>Link</th>
-    </tr>
-    <div class = "table-row">
+  <!-- Activities Template Page -->
+  <div class="page" id="activites-template-page">
+    <h1>lorem ipsum dolor</h1>
+    <table>
       <tr>
-        <td>Lorem</td>
-        <td>Ipsum</td>
-        <td><button>Dolor</button></td>
+        <th>Activity</th>
+        <th>Description</th>
+        <th>Link</th>
       </tr>
-    </div>
-  </table>
+      <div class="table-row">
+        <tr>
+          <td>Lorem</td>
+          <td>Ipsum</td>
+          <td><button>Dolor</button></td>
+        </tr>
+      </div>
+    </table>
 
-</div>
+  </div>
 
 
 
 
 
 
-</div>
+  </div>
 
 
 </body>
