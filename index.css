@@ -148,19 +148,20 @@ nav {
   padding: 1em;
   box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.32);
   z-index: 1;
-  font-weight: 300;
   font-size: 1em;
 }
 
 #nav-buttons {
   display: inline;
   position: absolute;
-  float: right;
 }
 
 nav h1 {
   display: inline;
-  padding: 3vw;
+  padding: 1vw;
+  max-width: 1vw;
+  font-weight: 300;
+  font-size: auto;
 }
 
 #nav-buttons button {
@@ -172,6 +173,7 @@ nav h1 {
   padding: 0.5em;
   font-size: 1em;
   margin-left: 1em;
+  font-weight: 300;
 }
 
 #nav-buttons button:hover {
