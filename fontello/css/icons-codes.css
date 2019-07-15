@@ -3,5 +3,10 @@
 .icon-video:before { content: '\e801'; } /* '' */
 .icon-star:before { content: '\e802'; } /* '' */
 .icon-eq:before { content: '\e803'; } /* '' */
+.icon-attention:before { content: '\e804'; } /* '' */
+.icon-link-ext:before { content: '\f08e'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-doc-text-inv:before { content: '\f15c'; } /* '' */
+.icon-apple:before { content: '\f179'; } /* '' */
+.icon-windows:before { content: '\f17a'; } /* '' */
+.icon-linux:before { content: '\f17c'; } /* '' */
