@@ -27,10 +27,10 @@ $(document).ready(function()
 function switchPage(id) {
   if (id == "home-page") {
     $("#back-button").css('visibility','hidden');
-    $("footer").css('visibility','hidden');
+    $("#footer").css('visibility','hidden');
   } else {
     $("#back-button").css('visibility','visible');
-    $("footer").css('visibility','visible');
+    $("#footer").css('visibility','visible');
   }
   var pages = $(".page").toArray();
   for (p of pages) {
